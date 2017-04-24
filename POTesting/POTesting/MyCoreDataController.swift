@@ -1,14 +1,16 @@
 //
-//  MyController.swift
+//  MyCoreDataController.swift
 //  POTesting
 //
 //  Created by Carsten Könemann on 24.04.2017.
 //  Copyright © 2017 Carsten Könemann. All rights reserved.
 //
 
-class MyController {
+import CoreData
+
+class MyCoreDataController {
     
-    static func doSomething(with model: MyModelProtocol) -> String {
+    static func doSomething(with model: MyCoreDataModelProtocol) -> String {
         if model.foobar == true {
             return "yay"
         } else {

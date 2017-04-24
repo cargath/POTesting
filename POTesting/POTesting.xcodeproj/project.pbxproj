@@ -12,9 +12,12 @@
 		ADD15F3D1EADED7B00AD9005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD15F3B1EADED7B00AD9005 /* Main.storyboard */; };
 		ADD15F3F1EADED7B00AD9005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD15F3E1EADED7B00AD9005 /* Assets.xcassets */; };
 		ADD15F421EADED7B00AD9005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD15F401EADED7B00AD9005 /* LaunchScreen.storyboard */; };
-		ADD15F5A1EADF84A00AD9005 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F591EADF84A00AD9005 /* MyModel.swift */; };
-		ADD15F5E1EADF8A000AD9005 /* MyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F5D1EADF8A000AD9005 /* MyController.swift */; };
-		ADD15F601EADF8C000AD9005 /* MyControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F5F1EADF8C000AD9005 /* MyControllerTests.swift */; };
+		ADD15F631EADFB3300AD9005 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F611EADFB3300AD9005 /* CoreDataModel.xcdatamodeld */; };
+		ADD15F651EADFB9700AD9005 /* MyCoreDataModel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F641EADFB9700AD9005 /* MyCoreDataModel+Extensions.swift */; };
+		ADD15F671EADFE1F00AD9005 /* MyCoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F661EADFE1F00AD9005 /* MyCoreDataController.swift */; };
+		ADD15F691EADFE3700AD9005 /* MyCoreLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F681EADFE3700AD9005 /* MyCoreLocationController.swift */; };
+		ADD15F6B1EAE03DB00AD9005 /* MyCoreLocationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F6A1EAE03DB00AD9005 /* MyCoreLocationControllerTests.swift */; };
+		ADD15F6D1EAE03F900AD9005 /* MyCoreDataControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F6C1EAE03F900AD9005 /* MyCoreDataControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +40,12 @@
 		ADD15F431EADED7B00AD9005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADD15F481EADED7B00AD9005 /* POTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD15F4E1EADED7B00AD9005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADD15F591EADF84A00AD9005 /* MyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
-		ADD15F5D1EADF8A000AD9005 /* MyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyController.swift; sourceTree = "<group>"; };
-		ADD15F5F1EADF8C000AD9005 /* MyControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyControllerTests.swift; sourceTree = "<group>"; };
+		ADD15F621EADFB3300AD9005 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		ADD15F641EADFB9700AD9005 /* MyCoreDataModel+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MyCoreDataModel+Extensions.swift"; sourceTree = "<group>"; };
+		ADD15F661EADFE1F00AD9005 /* MyCoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCoreDataController.swift; sourceTree = "<group>"; };
+		ADD15F681EADFE3700AD9005 /* MyCoreLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCoreLocationController.swift; sourceTree = "<group>"; };
+		ADD15F6A1EAE03DB00AD9005 /* MyCoreLocationControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCoreLocationControllerTests.swift; sourceTree = "<group>"; };
+		ADD15F6C1EAE03F900AD9005 /* MyCoreDataControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCoreDataControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +87,13 @@
 		ADD15F361EADED7B00AD9005 /* POTesting */ = {
 			isa = PBXGroup;
 			children = (
+				ADD15F6E1EAE040B00AD9005 /* Core Data */,
+				ADD15F6F1EAE041000AD9005 /* Core Location */,
 				ADD15F3E1EADED7B00AD9005 /* Assets.xcassets */,
 				ADD15F3B1EADED7B00AD9005 /* Main.storyboard */,
 				ADD15F401EADED7B00AD9005 /* LaunchScreen.storyboard */,
 				ADD15F431EADED7B00AD9005 /* Info.plist */,
 				ADD15F371EADED7B00AD9005 /* AppDelegate.swift */,
-				ADD15F5D1EADF8A000AD9005 /* MyController.swift */,
-				ADD15F591EADF84A00AD9005 /* MyModel.swift */,
 				ADD15F391EADED7B00AD9005 /* ViewController.swift */,
 			);
 			path = POTesting;
@@ -97,9 +103,28 @@
 			isa = PBXGroup;
 			children = (
 				ADD15F4E1EADED7B00AD9005 /* Info.plist */,
-				ADD15F5F1EADF8C000AD9005 /* MyControllerTests.swift */,
+				ADD15F6C1EAE03F900AD9005 /* MyCoreDataControllerTests.swift */,
+				ADD15F6A1EAE03DB00AD9005 /* MyCoreLocationControllerTests.swift */,
 			);
 			path = POTestingTests;
+			sourceTree = "<group>";
+		};
+		ADD15F6E1EAE040B00AD9005 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				ADD15F611EADFB3300AD9005 /* CoreDataModel.xcdatamodeld */,
+				ADD15F661EADFE1F00AD9005 /* MyCoreDataController.swift */,
+				ADD15F641EADFB9700AD9005 /* MyCoreDataModel+Extensions.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		ADD15F6F1EAE041000AD9005 /* Core Location */ = {
+			isa = PBXGroup;
+			children = (
+				ADD15F681EADFE3700AD9005 /* MyCoreLocationController.swift */,
+			);
+			name = "Core Location";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +234,10 @@
 			files = (
 				ADD15F3A1EADED7B00AD9005 /* ViewController.swift in Sources */,
 				ADD15F381EADED7B00AD9005 /* AppDelegate.swift in Sources */,
-				ADD15F5A1EADF84A00AD9005 /* MyModel.swift in Sources */,
-				ADD15F5E1EADF8A000AD9005 /* MyController.swift in Sources */,
+				ADD15F651EADFB9700AD9005 /* MyCoreDataModel+Extensions.swift in Sources */,
+				ADD15F691EADFE3700AD9005 /* MyCoreLocationController.swift in Sources */,
+				ADD15F631EADFB3300AD9005 /* CoreDataModel.xcdatamodeld in Sources */,
+				ADD15F671EADFE1F00AD9005 /* MyCoreDataController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADD15F601EADF8C000AD9005 /* MyControllerTests.swift in Sources */,
+				ADD15F6B1EAE03DB00AD9005 /* MyCoreLocationControllerTests.swift in Sources */,
+				ADD15F6D1EAE03F900AD9005 /* MyCoreDataControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +460,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ADD15F611EADFB3300AD9005 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ADD15F621EADFB3300AD9005 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = ADD15F621EADFB3300AD9005 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ADD15F2C1EADED7B00AD9005 /* Project object */;
 }
