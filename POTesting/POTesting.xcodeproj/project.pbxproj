@@ -12,7 +12,9 @@
 		ADD15F3D1EADED7B00AD9005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD15F3B1EADED7B00AD9005 /* Main.storyboard */; };
 		ADD15F3F1EADED7B00AD9005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD15F3E1EADED7B00AD9005 /* Assets.xcassets */; };
 		ADD15F421EADED7B00AD9005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD15F401EADED7B00AD9005 /* LaunchScreen.storyboard */; };
-		ADD15F4D1EADED7B00AD9005 /* POTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F4C1EADED7B00AD9005 /* POTestingTests.swift */; };
+		ADD15F5A1EADF84A00AD9005 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F591EADF84A00AD9005 /* MyModel.swift */; };
+		ADD15F5E1EADF8A000AD9005 /* MyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F5D1EADF8A000AD9005 /* MyController.swift */; };
+		ADD15F601EADF8C000AD9005 /* MyControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F5F1EADF8C000AD9005 /* MyControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +36,10 @@
 		ADD15F411EADED7B00AD9005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADD15F431EADED7B00AD9005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADD15F481EADED7B00AD9005 /* POTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADD15F4C1EADED7B00AD9005 /* POTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POTestingTests.swift; sourceTree = "<group>"; };
 		ADD15F4E1EADED7B00AD9005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD15F591EADF84A00AD9005 /* MyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
+		ADD15F5D1EADF8A000AD9005 /* MyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyController.swift; sourceTree = "<group>"; };
+		ADD15F5F1EADF8C000AD9005 /* MyControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				ADD15F401EADED7B00AD9005 /* LaunchScreen.storyboard */,
 				ADD15F431EADED7B00AD9005 /* Info.plist */,
 				ADD15F371EADED7B00AD9005 /* AppDelegate.swift */,
+				ADD15F5D1EADF8A000AD9005 /* MyController.swift */,
+				ADD15F591EADF84A00AD9005 /* MyModel.swift */,
 				ADD15F391EADED7B00AD9005 /* ViewController.swift */,
 			);
 			path = POTesting;
@@ -91,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				ADD15F4E1EADED7B00AD9005 /* Info.plist */,
-				ADD15F4C1EADED7B00AD9005 /* POTestingTests.swift */,
+				ADD15F5F1EADF8C000AD9005 /* MyControllerTests.swift */,
 			);
 			path = POTestingTests;
 			sourceTree = "<group>";
@@ -203,6 +209,8 @@
 			files = (
 				ADD15F3A1EADED7B00AD9005 /* ViewController.swift in Sources */,
 				ADD15F381EADED7B00AD9005 /* AppDelegate.swift in Sources */,
+				ADD15F5A1EADF84A00AD9005 /* MyModel.swift in Sources */,
+				ADD15F5E1EADF8A000AD9005 /* MyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADD15F4D1EADED7B00AD9005 /* POTestingTests.swift in Sources */,
+				ADD15F601EADF8C000AD9005 /* MyControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +420,7 @@
 				ADD15F531EADED7B00AD9005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADD15F541EADED7B00AD9005 /* Build configuration list for PBXNativeTarget "POTestingTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +429,7 @@
 				ADD15F561EADED7B00AD9005 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
