@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADC6C10B1EB21CDC00796FEB /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6C10A1EB21CDC00796FEB /* Pet.swift */; };
+		ADC6C10D1EB21DA100796FEB /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6C10C1EB21DA100796FEB /* Owner.swift */; };
+		ADC6C10F1EB21F0900796FEB /* OwnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6C10E1EB21F0900796FEB /* OwnerTests.swift */; };
 		ADD15F381EADED7B00AD9005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F371EADED7B00AD9005 /* AppDelegate.swift */; };
 		ADD15F3A1EADED7B00AD9005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD15F391EADED7B00AD9005 /* ViewController.swift */; };
 		ADD15F3D1EADED7B00AD9005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD15F3B1EADED7B00AD9005 /* Main.storyboard */; };
@@ -31,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ADC6C10A1EB21CDC00796FEB /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		ADC6C10C1EB21DA100796FEB /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		ADC6C10E1EB21F0900796FEB /* OwnerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerTests.swift; sourceTree = "<group>"; };
 		ADD15F341EADED7B00AD9005 /* POTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD15F371EADED7B00AD9005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADD15F391EADED7B00AD9005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADC6C1051EB21AD800796FEB /* Simple Data */ = {
+			isa = PBXGroup;
+			children = (
+				ADC6C10A1EB21CDC00796FEB /* Pet.swift */,
+				ADC6C10C1EB21DA100796FEB /* Owner.swift */,
+			);
+			name = "Simple Data";
+			sourceTree = "<group>";
+		};
 		ADD15F2B1EADED7B00AD9005 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +102,7 @@
 		ADD15F361EADED7B00AD9005 /* POTesting */ = {
 			isa = PBXGroup;
 			children = (
+				ADC6C1051EB21AD800796FEB /* Simple Data */,
 				ADD15F6E1EAE040B00AD9005 /* Core Data */,
 				ADD15F6F1EAE041000AD9005 /* Core Location */,
 				ADD15F3E1EADED7B00AD9005 /* Assets.xcassets */,
@@ -105,6 +121,7 @@
 				ADD15F4E1EADED7B00AD9005 /* Info.plist */,
 				ADD15F6C1EAE03F900AD9005 /* MyCoreDataControllerTests.swift */,
 				ADD15F6A1EAE03DB00AD9005 /* MyCoreLocationControllerTests.swift */,
+				ADC6C10E1EB21F0900796FEB /* OwnerTests.swift */,
 			);
 			path = POTestingTests;
 			sourceTree = "<group>";
@@ -232,6 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC6C10B1EB21CDC00796FEB /* Pet.swift in Sources */,
+				ADC6C10D1EB21DA100796FEB /* Owner.swift in Sources */,
 				ADD15F3A1EADED7B00AD9005 /* ViewController.swift in Sources */,
 				ADD15F381EADED7B00AD9005 /* AppDelegate.swift in Sources */,
 				ADD15F651EADFB9700AD9005 /* MyCoreDataModel+Extensions.swift in Sources */,
@@ -245,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC6C10F1EB21F0900796FEB /* OwnerTests.swift in Sources */,
 				ADD15F6B1EAE03DB00AD9005 /* MyCoreLocationControllerTests.swift in Sources */,
 				ADD15F6D1EAE03F900AD9005 /* MyCoreDataControllerTests.swift in Sources */,
 			);
