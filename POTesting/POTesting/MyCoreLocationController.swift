@@ -8,41 +8,18 @@
 
 import CoreLocation
 
-// MARK: - CLLocationManagerProtocol
-
-protocol CLLocationManagerProtocol {
-    
-    var delegate: CLLocationManagerDelegate? { get set }
-    
-    func startMonitoring(for region: CLRegion)
-    
-}
-
-extension CLLocationManager: CLLocationManagerProtocol {
-    //
-}
-
-// MARK: - MyCoreLocationController
-
-class MyCoreLocationController: NSObject {
+class MyCoreLocationController: NSObject, CLLocationManagerDelegate {
     
     var locationManager: CLLocationManagerProtocol? {
         didSet {
-            guard var locationManager = locationManager else {
-                return
-            }
-            locationManager.delegate = self
-            locationManager.startMonitoring(for: CLRegion())
+            locationManager?.delegate = self
+            locationManager?.startMonitoring(for: CLCircularRegion(center: CLLocationCoordinate2D(latitude: 0, longitude: 0), radius: 5, identifier: "foo"))
         }
     }
     
-    var didVisitRegion = false
+    // MARK: CLLocationManagerDelegate
     
-}
-
-// MARK: - CLLocationManagerDelegate
-
-extension MyCoreLocationController: CLLocationManagerDelegate {
+    var didVisitRegion = false
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         self.didVisitRegion = true

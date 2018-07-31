@@ -17,6 +17,11 @@ class MockPet: Pet {
         feedCallCount += 1
     }
     
+    func validateFeedCallCount() {
+        XCTAssert(feedCallCount > 0)
+        XCTAssert(feedCallCount < 10)
+    }
+    
 }
 
 class OwnerTests: XCTestCase {
@@ -25,7 +30,15 @@ class OwnerTests: XCTestCase {
         let pet = MockPet()
         let owner = Owner(pet: pet)
         owner.beResponsible()
-        XCTAssert(pet.feedCallCount == 1)
+        XCTAssert(pet.feedCallCount > 0)
+        XCTAssert(pet.feedCallCount < 10)
+    }
+    
+    func testBeResponsibleImproved() {
+        let pet = MockPet()
+        let owner = Owner(pet: pet)
+        owner.beResponsible()
+        pet.validateFeedCallCount()
     }
     
 }

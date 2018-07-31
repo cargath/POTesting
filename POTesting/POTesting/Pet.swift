@@ -43,7 +43,7 @@ class Fish: Pet {
     }
     
     func feed() {
-        mealsCount += 1;
+        mealsCount += 1
         if mealsCount > 9 {
             die()
         }

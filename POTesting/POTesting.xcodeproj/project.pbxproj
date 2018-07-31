@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD6FE2511EB344D100543645 /* CLLocationManager+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FE2501EB344D100543645 /* CLLocationManager+Protocol.swift */; };
+		AD6FE2531EBB0D7A00543645 /* XCTestCase+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FE2521EBB0D7A00543645 /* XCTestCase+CoreData.swift */; };
 		ADC6C10B1EB21CDC00796FEB /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6C10A1EB21CDC00796FEB /* Pet.swift */; };
 		ADC6C10D1EB21DA100796FEB /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6C10C1EB21DA100796FEB /* Owner.swift */; };
 		ADC6C10F1EB21F0900796FEB /* OwnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC6C10E1EB21F0900796FEB /* OwnerTests.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD6FE2501EB344D100543645 /* CLLocationManager+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Protocol.swift"; sourceTree = "<group>"; };
+		AD6FE2521EBB0D7A00543645 /* XCTestCase+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+CoreData.swift"; sourceTree = "<group>"; };
 		ADC6C10A1EB21CDC00796FEB /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		ADC6C10C1EB21DA100796FEB /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		ADC6C10E1EB21F0900796FEB /* OwnerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerTests.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 				ADD15F6C1EAE03F900AD9005 /* MyCoreDataControllerTests.swift */,
 				ADD15F6A1EAE03DB00AD9005 /* MyCoreLocationControllerTests.swift */,
 				ADC6C10E1EB21F0900796FEB /* OwnerTests.swift */,
+				AD6FE2521EBB0D7A00543645 /* XCTestCase+CoreData.swift */,
 			);
 			path = POTestingTests;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				ADD15F681EADFE3700AD9005 /* MyCoreLocationController.swift */,
+				AD6FE2501EB344D100543645 /* CLLocationManager+Protocol.swift */,
 			);
 			name = "Core Location";
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 				ADD15F651EADFB9700AD9005 /* MyCoreDataModel+Extensions.swift in Sources */,
 				ADD15F691EADFE3700AD9005 /* MyCoreLocationController.swift in Sources */,
 				ADD15F631EADFB3300AD9005 /* CoreDataModel.xcdatamodeld in Sources */,
+				AD6FE2511EB344D100543645 /* CLLocationManager+Protocol.swift in Sources */,
 				ADD15F671EADFE1F00AD9005 /* MyCoreDataController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADC6C10F1EB21F0900796FEB /* OwnerTests.swift in Sources */,
+				AD6FE2531EBB0D7A00543645 /* XCTestCase+CoreData.swift in Sources */,
 				ADD15F6B1EAE03DB00AD9005 /* MyCoreLocationControllerTests.swift in Sources */,
 				ADD15F6D1EAE03F900AD9005 /* MyCoreDataControllerTests.swift in Sources */,
 			);

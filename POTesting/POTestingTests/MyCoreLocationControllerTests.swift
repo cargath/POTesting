@@ -12,17 +12,45 @@ import XCTest
 
 class CLLocationManagerMock: CLLocationManagerProtocol {
     
-    var manager: CLLocationManager
+    var manager = CLLocationManager()
+    
+    var updatingLocation: Bool = false
+    
+    func simulateLocation(location: CLLocation) {
+            
+        // Simulate current location update
+        if updatingLocation {
+            delegate?.locationManager?(manager, didUpdateLocations: [location])
+        }
+        
+        // Simulate region monitoring
+        for region in monitoredRegions {
+            if let circularRegion = region as? CLCircularRegion, circularRegion.contains(location.coordinate) {
+                delegate?.locationManager?(manager, didEnterRegion: region)
+            }
+        }
+    }
+    
+    // MARK: CLLocationManagerProtocol
+    
     var delegate: CLLocationManagerDelegate?
     
-    init() {
-        self.manager = CLLocationManager()
+    var monitoredRegions: Set<CLRegion> = Set<CLRegion>()
+    
+    func startUpdatingLocation() {
+        updatingLocation = true
+    }
+    
+    func stopUpdatingLocation() {
+        updatingLocation = false
+    }
+    
+    func stopMonitoring(for region: CLRegion) {
+        monitoredRegions.remove(region)
     }
     
     func startMonitoring(for region: CLRegion) {
-        if let delegate = self.delegate {
-            delegate.locationManager?(manager, didEnterRegion: CLRegion())
-        }
+        monitoredRegions.insert(region)
     }
     
 }
@@ -30,9 +58,15 @@ class CLLocationManagerMock: CLLocationManagerProtocol {
 class MyCoreLocationControllerTests: XCTestCase {
     
     func testExample01() {
+        
         let controller = MyCoreLocationController()
+        let mockLocationManager = CLLocationManagerMock()
+        controller.locationManager = mockLocationManager
+        
+        mockLocationManager.simulateLocation(location: CLLocation(latitude: 1, longitude: 1))
         XCTAssertFalse(controller.didVisitRegion)
-        controller.locationManager = CLLocationManagerMock()
+        
+        mockLocationManager.simulateLocation(location: CLLocation(latitude: 0, longitude: 0))
         XCTAssertTrue(controller.didVisitRegion)
     }
     
